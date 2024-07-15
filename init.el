@@ -194,6 +194,7 @@
   :added "2024-07-14"
   :emacs>= 27.1
   :ensure t
+  :hook (completion-list-mode-hook . consult-preview-at-point-mode)
   :preface
   (defun c/consult-line (&optional at-point)
     "Consult-line uses things-at-point if set C-u prefix."
