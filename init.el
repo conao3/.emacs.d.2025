@@ -326,12 +326,12 @@
   :added "2024-07-14"
   :hook ((clojure-mode-hook . eglot-ensure))
   :custom ((eldoc-echo-area-use-multiline-p . nil)
-           (eglot-connect-timeout . 600))
-  :config
-  (leaf eglot-booster
-    :when (executable-find "emacs-lsp-booster")
-    :vc ( :url "https://github.com/jdtsmith/eglot-booster")
-    :global-minor-mode t))
+           (eglot-connect-timeout . 600)))
+
+(leaf eglot-booster
+  :when (executable-find "emacs-lsp-booster")
+  :vc ( :url "https://github.com/jdtsmith/eglot-booster")
+  :global-minor-mode t)
 
 (leaf cider
   :doc "Clojure Interactive Development Environment that Rocks"
