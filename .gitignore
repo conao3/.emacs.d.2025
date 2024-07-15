@@ -1,0 +1,5 @@
+/backup
+/eln-cache
+/elpa
+/savehist
+*.elc
