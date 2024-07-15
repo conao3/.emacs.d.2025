@@ -217,7 +217,7 @@
          ;; s-s bindings
          ("C-s" . c/consult-line)
          ("s-s s" . isearch-forward)
-         ("s-s s" . isearch-forward-regexp)
+         ("s-s S" . isearch-forward-regexp)
          ("s-s r" . consult-ripgrep)
 
          (minibuffer-local-map
