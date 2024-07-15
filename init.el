@@ -214,11 +214,11 @@
          ([remap imenu] . consult-imenu)            ; M-g i
          ("M-g f" . consult-flymake)
 
-         ;; s-s bindings
+         ;; C-M-s bindings
          ("C-s" . c/consult-line)
-         ("s-s s" . isearch-forward)
-         ("s-s S" . isearch-forward-regexp)
-         ("s-s r" . consult-ripgrep)
+         ("C-M-s s" . isearch-forward)
+         ("C-M-s S" . isearch-forward-regexp)
+         ("C-M-s r" . consult-ripgrep)
 
          (minibuffer-local-map
           :package emacs
