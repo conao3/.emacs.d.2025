@@ -278,6 +278,17 @@
   :bind ((corfu-map
           ("C-s" . corfu-insert-separator))))
 
+(leaf cape
+  :doc "Completion At Point Extensions"
+  :req "emacs-27.1" "compat-29.1.4.4"
+  :tag "text" "completion" "matching" "convenience" "abbrev" "emacs>=27.1"
+  :url "https://github.com/minad/cape"
+  :added "2024-07-15"
+  :emacs>= 27.1
+  :ensure t
+  :config
+  (add-to-list 'completion-at-point-functions #'cape-file))
+
 (leaf puni
   :doc "Parentheses Universalistic"
   :req "emacs-26.1"
