@@ -215,7 +215,8 @@
          ("M-g f" . consult-flymake)
 
          ;; C-M-s bindings
-         ("C-s" . c/consult-line)
+         ("C-s" . c/consult-line)       ; isearch-forward
+         ("C-M-s" . nil)                ; isearch-forward-regexp
          ("C-M-s s" . isearch-forward)
          ("C-M-s S" . isearch-forward-regexp)
          ("C-M-s r" . consult-ripgrep)
