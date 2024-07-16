@@ -235,8 +235,8 @@
   :ensure t
   :custom ((affe-highlight-function . 'orderless-highlight-matches)
            (affe-regexp-function . 'orderless-pattern-compiler))
-  :bind (("s-s r" . affe-grep)
-         ("s-s f" . affe-find)))
+  :bind (("C-M-s r" . affe-grep)
+         ("C-M-s f" . affe-find)))
 
 (leaf orderless
   :doc "Completion style for matching regexps in any order"
