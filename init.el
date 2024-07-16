@@ -218,7 +218,7 @@
          ("C-s" . c/consult-line)       ; isearch-forward
          ("C-M-s" . nil)                ; isearch-forward-regexp
          ("C-M-s s" . isearch-forward)
-         ("C-M-s S" . isearch-forward-regexp)
+         ("C-M-s C-s" . isearch-forward-regexp)
          ("C-M-s r" . consult-ripgrep)
 
          (minibuffer-local-map
