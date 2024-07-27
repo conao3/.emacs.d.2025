@@ -143,6 +143,15 @@
           ("M-n" . flymake-goto-next-error)
           ("M-p" . flymake-goto-prev-error))))
 
+(leaf which-key
+  :doc "Display available keybindings in popup"
+  :req "emacs-25.1"
+  :tag "emacs>=25.1"
+  :added "2024-07-14"
+  :emacs>= 25.1
+  :ensure t
+  :global-minor-mode t)
+
 (leaf exec-path-from-shell
   :doc "Get environment variables such as $PATH from the shell"
   :req "emacs-24.4"
@@ -156,15 +165,6 @@
            (exec-path-from-shell-variables . '("PATH" "GOPATH" "JAVA_HOME")))
   :config
   (exec-path-from-shell-initialize))
-
-(leaf which-key
-  :doc "Display available keybindings in popup"
-  :req "emacs-25.1"
-  :tag "emacs>=25.1"
-  :added "2024-07-14"
-  :emacs>= 25.1
-  :ensure t
-  :global-minor-mode t)
 
 (leaf vertico
   :doc "VERTical Interactive COmpletion"
