@@ -344,6 +344,9 @@
   :emacs>= 26
   :ensure t)
 
+(leaf vim-jp-radio
+  :vc ( :url "https://github.com/vim-jp-radio/vim-jp-radio.el"))
+
 (provide 'init)
 
 ;; Local Variables:
