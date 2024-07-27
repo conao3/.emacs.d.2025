@@ -3,3 +3,6 @@
 /elpa
 /savehist
 *.elc
+/custom.el
+/projects
+/transient
