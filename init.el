@@ -72,7 +72,7 @@
             (truncate-lines . t)
             (use-dialog-box . nil)
             (use-file-dialog . nil)
-            (menu-bar-mode . nil)
+            (menu-bar-mode . t)
             (tool-bar-mode . nil)
             (scroll-bar-mode . nil)
             (indent-tabs-mode . nil))
@@ -137,6 +137,18 @@
            (exec-path-from-shell-variables . '("PATH" "GOPATH" "JAVA_HOME")))
   :config
   (exec-path-from-shell-initialize))
+
+(leaf ns
+  :doc "next/open/gnustep / macos communication module"
+  :when (eq 'ns window-system)
+  :custom ((ns-control-modifier . 'control)
+           (ns-option-modifier . 'super)
+           (ns-command-modifier . 'meta)
+           (ns-right-control-modifier . 'control)
+           (ns-right-option-modifier . 'hyper)
+           (ns-right-command-modifier . 'meta)
+           (default-frame-alist . '((ns-appearance . dark)
+                                    (ns-transparent-titlebar . t)))))
 
 (leaf vertico
   :doc "VERTical Interactive COmpletion"
